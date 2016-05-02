@@ -8,5 +8,4 @@ file.split("").each do |letter|
 end
 
 a = hsh.sort_by {|k,w| w}.reverse
-File.new('json_file.txt','w').puts a.to_json # "sorted.txt"
-#hsh.write("sorted.txt")
+File.new('json_file.txt','w').puts a.to_json
