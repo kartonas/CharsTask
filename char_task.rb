@@ -1,5 +1,5 @@
 require 'json'
-file = File.open(ARGV[0], 'r').read.gsub('' '', '')
+file = File.open(ARGV[0], 'r').read.gsub(' ', '')
 counter = file.split('').count
 hsh = Hash.new(0)
 file.split('').each do |letter|
